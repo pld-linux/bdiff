@@ -1,0 +1,11 @@
+--- bdiff-1.0.4/Makefile~	2003-09-30 21:45:54.000000000 +0000
++++ bdiff-1.0.4/Makefile	2004-03-08 16:37:32.413065664 +0000
+@@ -14,7 +14,7 @@
+ 	strip bdiff
+ 
+ lib/md5.o:
+-	cc -O2 -D_LIBC -c lib/md5.c -o lib/md5.o
++	cc -O2 -c lib/md5.c -o lib/md5.o
+ 
+ clean:
+ 	rm -f bdiff search.o lib/md5.o
