@@ -17,7 +17,9 @@ bdiff is a simple and small program to do what the very common utilities
 files.
 
 %description -l pl
-
+bdiff jest prostym i niewielkim programem s³u¿±cym do tego, do czego
+u¿ywane s± popularne narzêdzia "diff" oraz "patch" - z t± ró¿nic±, ¿e nie
+na plikch tekstowych, a binarnych.
 
 %prep
 %setup -q
