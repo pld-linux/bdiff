@@ -1,5 +1,5 @@
-Summary:	diffutils for binary files.
-Summary(pl):	diffutils dla plików binarnych.
+Summary:	diffutils for binary files
+Summary(pl):	diffutils dla plików binarnych
 Name:		bdiff
 Version:	1.0.4
 Release:	0.1
@@ -12,14 +12,14 @@ URL:		http://xoomer.virgilio.it/g_pochini/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-bdiff is a simple and small program to do what the very common utilities
-"diff" and "patch" do with text files, but also works with binary
-files.
+bdiff is a simple and small program to do what the very common
+utilities "diff" and "patch" do with text files, but also works with
+binary files.
 
 %description -l pl
 bdiff jest prostym i niewielkim programem s³u¿±cym do tego, do czego
-u¿ywane s± popularne narzêdzia "diff" oraz "patch" - z t± ró¿nic±, ¿e nie
-na plikch tekstowych, a binarnych.
+u¿ywane s± popularne narzêdzia "diff" oraz "patch" - z t± ró¿nic±, ¿e
+dzia³a nie tylko na plikach tekstowych, a tak¿e binarnych.
 
 %prep
 %setup -q
@@ -32,7 +32,6 @@ na plikch tekstowych, a binarnych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 install bdiff $RPM_BUILD_ROOT%{_bindir}
