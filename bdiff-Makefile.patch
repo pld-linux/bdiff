@@ -1,21 +1,21 @@
-diff -burN bdiff-1.0.4.orig/Makefile bdiff-1.0.4/Makefile
---- bdiff-1.0.4.orig/Makefile	2004-03-08 17:47:48.504405544 +0100
-+++ bdiff-1.0.4/Makefile	2004-03-08 17:50:03.583870344 +0100
+diff -burN bdiff-1.0.5.orig/Makefile bdiff-1.0.5/Makefile
+--- bdiff-1.0.5.orig/Makefile	2004-08-07 17:32:14.068879768 +0200
++++ bdiff-1.0.5/Makefile	2004-08-07 17:35:49.222171496 +0200
 @@ -2,19 +2,16 @@
  # _LIBC define for md5.o is needed on bigendian machines
  
  bdiff: bdiff.c lib/md5.o
--	cc -O2 -Wall -Wno-parentheses lib/md5.o bdiff.c -o bdiff
+-	cc -O2 -Wno-parentheses lib/md5.o bdiff.c -o bdiff
 -	strip bdiff
 +	$(CC) $(CFLAGS) lib/md5.o bdiff.c -o bdiff
  
  ppc: search.s bdiff.c lib/md5.o
--	cc -O2 -Wall -Wno-parentheses -DPPCASM lib/md5.o search.s bdiff.c -o bdiff
+-	cc -O2 -Wno-parentheses -DPPCASM lib/md5.o search.s bdiff.c -o bdiff
 -	strip bdiff
 +	$(CC) $(CFLAGS) -DPPCASM lib/md5.o search.s bdiff.c -o bdiff
  
  nommap: bdiff.c lib/md5.o
--	cc -O2 -Wall -Wno-parentheses -DNOMMAP lib/md5.o bdiff.c -o bdiff
+-	cc -O2 -Wno-parentheses -DNOMMAP lib/md5.o bdiff.c -o bdiff
 -	strip bdiff
 +	$(CC) $(CFLAGS) -DNOMMAP lib/md5.o bdiff.c -o bdiff
  

@@ -1,12 +1,12 @@
 Summary:	diffutils for binary files
 Summary(pl):	diffutils dla plików binarnych
 Name:		bdiff
-Version:	1.0.4
+Version:	1.0.5
 Release:	1
 License:	GPL	
 Group:		Applications/Console
 Source0:	http://xoomer.virgilio.it/g_pochini/%{name}-%{version}.tgz
-# Source0-md5:	c4c74d3b753c0e125998e797b7dcf3fa
+# Source0-md5:	55e52c93565db80f18d9aa2d39a0ed58
 Patch0:		%{name}-Makefile.patch
 URL:		http://xoomer.virgilio.it/g_pochini/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
