@@ -24,7 +24,9 @@ files.
 %patch0 -p1
 
 %build
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags}" \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
