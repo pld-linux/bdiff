@@ -1,5 +1,5 @@
 Summary:	diffutils for binary files
-Summary(pl.UTF-8):   diffutils dla plików binarnych
+Summary(pl.UTF-8):	diffutils dla plików binarnych
 Name:		bdiff
 Version:	1.0.5
 Release:	1
