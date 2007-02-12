@@ -1,5 +1,5 @@
 Summary:	diffutils for binary files
-Summary(pl):	diffutils dla plików binarnych
+Summary(pl.UTF-8):   diffutils dla plikÃ³w binarnych
 Name:		bdiff
 Version:	1.0.5
 Release:	1
@@ -16,10 +16,10 @@ bdiff is a simple and small program to do what the very common
 utilities "diff" and "patch" do with text files, but also works with
 binary files.
 
-%description -l pl
-bdiff jest prostym i niewielkim programem s³u¿±cym do tego, do czego
-u¿ywane s± popularne narzêdzia "diff" oraz "patch" - z t± ró¿nic±, ¿e
-dzia³a nie tylko na plikach tekstowych, a tak¿e binarnych.
+%description -l pl.UTF-8
+bdiff jest prostym i niewielkim programem sÅ‚uÅ¼Ä…cym do tego, do czego
+uÅ¼ywane sÄ… popularne narzÄ™dzia "diff" oraz "patch" - z tÄ… rÃ³Å¼nicÄ…, Å¼e
+dziaÅ‚a nie tylko na plikach tekstowych, a takÅ¼e binarnych.
 
 %prep
 %setup -q
