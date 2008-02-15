@@ -8,7 +8,7 @@ Group:		Applications/Console
 Source0:	http://xoomer.virgilio.it/g_pochini/%{name}-%{version}.tgz
 # Source0-md5:	55e52c93565db80f18d9aa2d39a0ed58
 Patch0:		%{name}-Makefile.patch
-URL:		http://xoomer.virgilio.it/g_pochini/
+URL:		http://www.webalice.it/g_pochini/bdiff/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
