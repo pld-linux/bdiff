@@ -27,7 +27,7 @@ działa nie tylko na plikach tekstowych, a także binarnych.
 
 %build
 %{__make} \
-	CFLAGS="%{rpmcflags}" \
+	CFLAGS="%{rpmcflags} %{rpmcppflags} %{rpmldflags}" \
 	CC="%{__cc}"
 
 %install
