@@ -21,7 +21,7 @@ diff -burN bdiff-1.0.5.orig/Makefile bdiff-1.0.5/Makefile
  
  lib/md5.o:
 -	cc -O2 -D_LIBC -c lib/md5.c -o lib/md5.o
-+	$(CC) $(CFLAGS) -c lib/md5.c -o lib/md5.o
++	$(CC) $(CFLAGS) -DSTDC_HEADERS -c lib/md5.c -o lib/md5.o
  
  clean:
  	rm -f bdiff search.o lib/md5.o
